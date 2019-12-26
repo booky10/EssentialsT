@@ -1,0 +1,19 @@
+---
+author: booky10
+name: EssentialsT
+main: tk.t11e.essentials.main.Main
+version: '1.0'
+api-version: '1.15'
+commands:
+  essentialsT:
+    usage: 'Usage: /essentialsT <reload|disable|enable>'
+    description: 'The plugin command for this plugin'
+    permission: essentialsT
+  gameMode:
+    usage: 'Usage: /gameMode <adventure|creative|spectator|survival> [player]'
+    description: 'Sets a gameMode'
+    permission: gameMode
+  gm:
+    usage: 'Usage: /gm <adventure|creative|spectator|survival> [player]'
+    description: 'Sets a gameMode'
+    permission: gameMode

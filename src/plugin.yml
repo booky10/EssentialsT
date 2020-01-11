@@ -17,3 +17,7 @@ commands:
     usage: 'Usage: /gm <adventure|creative|spectator|survival> [player]'
     description: 'Sets a gameMode'
     permission: gameMode
+  enchant:
+    usage: 'Usage: /enchant <player> enchantment'
+    description: 'Enchants an item'
+    permission: enchant

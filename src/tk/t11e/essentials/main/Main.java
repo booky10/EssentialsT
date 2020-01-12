@@ -4,9 +4,7 @@ package tk.t11e.essentials.main;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import tk.t11e.essentials.commands.Enchant;
-import tk.t11e.essentials.commands.EssentialsT;
-import tk.t11e.essentials.commands.GameMode;
+import tk.t11e.essentials.commands.*;
 
 import java.util.Objects;
 
@@ -41,5 +39,8 @@ public class Main extends JavaPlugin {
         Objects.requireNonNull(getCommand("gameMode")).setExecutor(new GameMode());
         Objects.requireNonNull(getCommand("gm")).setExecutor(new GameMode());
         Objects.requireNonNull(getCommand("enchant")).setExecutor(new Enchant());
+        Objects.requireNonNull(getCommand("unEnchant")).setExecutor(new UnEnchant());
+        Objects.requireNonNull(getCommand("god")).setExecutor(new God());
+        Objects.requireNonNull(getCommand("fly")).setExecutor(new Fly());
     }
 }

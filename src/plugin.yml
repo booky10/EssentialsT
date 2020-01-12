@@ -18,6 +18,18 @@ commands:
     description: 'Sets a gameMode'
     permission: gameMode
   enchant:
-    usage: 'Usage: /enchant <player> enchantment'
+    usage: 'Usage: /enchant <player> <enchantment> <level>'
     description: 'Enchants an item'
     permission: enchant
+  unEnchant:
+    usage: 'Usage: /unEnchant <player>'
+    description: 'Un-enchants an item'
+    permission: unEnchant
+  god:
+    usage: 'Usage: /god <on|off> [player]'
+    description: En/Disables invulnerability
+    permission: god
+  fly:
+    usage: 'Usage: /fly <on|off> [player]'
+    description: En/Disables fly mode
+    permission: fly

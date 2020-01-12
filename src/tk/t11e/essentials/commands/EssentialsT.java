@@ -25,12 +25,6 @@ public class EssentialsT implements CommandExecutor, TabCompleter {
                         Bukkit.getPluginManager().disablePlugin(Main.getPlugin(Main.class), true);
                         Bukkit.getPluginManager().enablePlugin(Main.getPlugin(Main.class));
                         player.sendMessage(Main.PREFIX + "§aSuccessfully reloaded plugin!");
-                    } else if (args[0].equalsIgnoreCase("enable")) {
-                        if (!Bukkit.getPluginManager().isPluginEnabled(Main.getPlugin(Main.class))) {
-                            Bukkit.getPluginManager().enablePlugin(Main.getPlugin(Main.class));
-                            player.sendMessage(Main.PREFIX + "§aSuccessfully enabled plugin!");
-                        } else
-                            player.sendMessage(Main.PREFIX + "The plugin is already enabled!");
                     } else if (args[0].equalsIgnoreCase("disable")) {
                         if (Bukkit.getPluginManager().isPluginEnabled(Main.getPlugin(Main.class))) {
                             Bukkit.getPluginManager().disablePlugin(Main.getPlugin(Main.class), true);
@@ -46,12 +40,6 @@ public class EssentialsT implements CommandExecutor, TabCompleter {
                 Bukkit.getPluginManager().disablePlugin(Main.getPlugin(Main.class));
                 Bukkit.getPluginManager().enablePlugin(Main.getPlugin(Main.class));
                 sender.sendMessage("Successfully reloaded plugin!");
-            } else if (args[0].equalsIgnoreCase("enable")) {
-                if (!Bukkit.getPluginManager().isPluginEnabled(Main.getPlugin(Main.class))) {
-                    Bukkit.getPluginManager().enablePlugin(Main.getPlugin(Main.class));
-                    sender.sendMessage("Successfully enabled plugin!");
-                } else
-                    sender.sendMessage("The plugin is already enabled!");
             } else if (args[0].equalsIgnoreCase("disable")) {
                 if (Bukkit.getPluginManager().isPluginEnabled(Main.getPlugin(Main.class))) {
                     Bukkit.getPluginManager().disablePlugin(Main.getPlugin(Main.class));
@@ -68,7 +56,6 @@ public class EssentialsT implements CommandExecutor, TabCompleter {
         List<String> list = new ArrayList<>();
         if (args.length == 1) {
             list.add("reload");
-            list.add("enable");
             list.add("disable");
         }
         return list;

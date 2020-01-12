@@ -7,6 +7,7 @@
     <pattern value="tk.t11e.essentials.commands.EssentialsT" />
     <pattern value="tk.t11e.essentials.commands.GameMode" />
     <pattern value="tk.t11e.essentials.main.Main" />
+    <pattern value="tk.t11e.essentials.commands.God" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

@@ -33,3 +33,7 @@ commands:
     usage: 'Usage: /fly <on|off> [player]'
     description: En/Disables fly mode
     permission: fly
+  sudo:
+    usage: 'Usage: /sudo <player> <message>'
+    description: Force a player to say something
+    permission: sudo

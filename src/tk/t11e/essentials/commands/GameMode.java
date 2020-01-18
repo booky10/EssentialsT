@@ -102,7 +102,9 @@ public class GameMode implements CommandExecutor, TabCompleter {
             list.add("creative");
             list.add("spectator");
             list.add("survival");
-        }
+        } else if(args.length==2)
+            for (Player player : Bukkit.getOnlinePlayers())
+                list.add(player.getName());
         return list;
     }
 }

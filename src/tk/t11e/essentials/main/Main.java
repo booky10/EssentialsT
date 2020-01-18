@@ -42,5 +42,6 @@ public class Main extends JavaPlugin {
         Objects.requireNonNull(getCommand("unEnchant")).setExecutor(new UnEnchant());
         Objects.requireNonNull(getCommand("god")).setExecutor(new God());
         Objects.requireNonNull(getCommand("fly")).setExecutor(new Fly());
+        Objects.requireNonNull(getCommand("sudo")).setExecutor(new Sudo());
     }
 }

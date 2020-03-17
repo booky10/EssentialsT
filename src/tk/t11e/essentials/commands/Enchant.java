@@ -180,6 +180,6 @@ public class Enchant implements CommandExecutor, TabCompleter {
             if (!args[1].equalsIgnoreCase("all"))
                 list.add("nothing");
         }
-        return list;
+        return tk.t11e.essentials.util.TabCompleter.convert(args,list);
     }
 }

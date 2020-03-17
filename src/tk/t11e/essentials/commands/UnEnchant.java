@@ -61,6 +61,6 @@ public class UnEnchant implements CommandExecutor, TabCompleter {
         if (args.length == 1)
             for (Player player : Bukkit.getOnlinePlayers())
                 list.add(player.getName());
-        return list;
+        return tk.t11e.essentials.util.TabCompleter.convert(args,list);
     }
 }

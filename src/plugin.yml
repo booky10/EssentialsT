@@ -4,27 +4,30 @@ name: EssentialsT
 main: tk.t11e.essentials.main.Main
 version: '1.0'
 api-version: '1.15'
+depend:
+  - PaperT11EAPI
+  - ProtocolLib
 commands:
   essentialsT:
-    usage: 'Usage: /essentialsT <reload|disable|enable>'
+    usage: 'Usage: /essentialst <reload|disable|enable>'
     description: 'The plugin command for this plugin'
     permission: essentialsT
   gameMode:
-    usage: 'Usage: /gameMode <adventure|creative|spectator|survival> [player]'
-    description: 'Sets a gameMode'
-    permission: gameMode
+    usage: 'Usage: /gamemode <adventure|creative|spectator|survival> [player]'
+    description: 'Sets a gamemode'
+    permission: gamemode
   gm:
     usage: 'Usage: /gm <adventure|creative|spectator|survival> [player]'
-    description: 'Sets a gameMode'
-    permission: gameMode
+    description: 'Sets a gamemode'
+    permission: gamemode
   enchant:
     usage: 'Usage: /enchant <player> <enchantment> <level>'
     description: 'Enchants an item'
     permission: enchant
   unEnchant:
-    usage: 'Usage: /unEnchant <player>'
-    description: 'Un-enchants an item'
-    permission: unEnchant
+    usage: 'Usage: /unenchant <player>'
+    description: 'Unenchants an item'
+    permission: unenchant
   god:
     usage: 'Usage: /god <on|off> [player]'
     description: En/Disables invulnerability
@@ -37,3 +40,12 @@ commands:
     usage: 'Usage: /sudo <player> <message>'
     description: Force a player to say something
     permission: sudo
+  geteffects:
+    usage: 'Usage: /geteffects [player]'
+    description: Gets the effects of a player
+    permission: effect.get
+  restoreexplosion:
+    usage: 'Usage: /restoreexplosion [amount]'
+    description: Restore the latest explosions
+    permission: explosion.restore
+    aliases: ["exrestore","restoreex","explosionrestore"]

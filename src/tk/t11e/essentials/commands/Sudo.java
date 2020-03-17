@@ -6,6 +6,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
+import org.bukkit.craftbukkit.v1_15_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import tk.t11e.essentials.main.Main;
 
@@ -40,7 +41,7 @@ public class Sudo implements CommandExecutor, TabCompleter {
             if(target!=null) {
                 StringBuilder message= new StringBuilder();
                 for (int i = 1; i < args.length; i++)
-                    message.append(args[i]);
+                    message.append(args[i]).append(" ");
                 target.chat(message.toString());
                 sender.sendMessage("Successfully executed chat message!");
             }else
@@ -56,6 +57,6 @@ public class Sudo implements CommandExecutor, TabCompleter {
         if(args.length==1)
             for (Player player : Bukkit.getOnlinePlayers())
                 list.add(player.getName());
-        return list;
+        return tk.t11e.essentials.util.TabCompleter.convert(args,list);
     }
 }

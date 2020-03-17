@@ -58,6 +58,6 @@ public class EssentialsT implements CommandExecutor, TabCompleter {
             list.add("reload");
             list.add("disable");
         }
-        return list;
+        return tk.t11e.essentials.util.TabCompleter.convert(args,list);
     }
 }
